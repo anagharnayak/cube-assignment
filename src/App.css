@@ -1,0 +1,136 @@
+.app {
+  display: flex;
+}
+
+.customer-list-container {
+  display: flex;
+  align-items: center;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.customer-list {
+  overflow-y: auto;
+  max-height: calc(100vh - 20px);
+  margin-right: 16px;
+}
+
+.customer-details {
+  flex: 1;
+  max-height: 100vh;
+  overflow-y: auto;
+  position: relative;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  padding: 16px;
+}
+
+.customer-details h2 {
+  text-align: center; /* Center the customer name */
+}
+
+.customer-card {
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.customer-card.selected {
+  background-color: #f0f0f0; /* Change background color for selected customer */
+}
+
+.customer-details-container {
+  display: flex;
+  justify-content: center; /* Center align content horizontally */
+  align-items: center; /* Center align content vertically */
+  height: 100vh;
+}
+
+.customer-details-content {
+  text-align: center; /* Center align text within content */
+}
+
+.app {
+  display: flex;
+}
+
+.customer-list-container {
+  flex: 1; /* Make the customer list container cover one-third of the page */
+  max-width: 33.33%; /* Set max-width to 33.33% for responsiveness */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.customer-details {
+  flex: 2; /* Make the customer details container cover two-thirds of the page */
+  max-width: 66.66%; /* Set max-width to 66.66% for responsiveness */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.customer-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.summary {
+  margin-bottom: 20px; /* Add margin below the summary */
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create three columns */
+  gap: 10px; /* Add space between photos */
+}
+
+.photo {
+  width: 100%; /* Ensure photos fill the grid columns */
+  height: auto;
+}
+
+.customer-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.summary {
+  margin-bottom: 20px; /* Add margin below the summary */
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create three columns */
+  gap: 10px; /* Add space between photos */
+  width: 100%; /* Ensure the grid takes up the full width */
+}
+
+.photo {
+  width: 100%; /* Fill the grid cell with the image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.customer-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.summary {
+  margin-bottom: 20px; /* Add margin below the summary */
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create three columns */
+  gap: 10px; /* Add space between photos */
+  width: 100%; /* Ensure the grid takes up the full width */
+  max-width: 600px; /* Set a maximum width for the grid */
+}
+
+.photo {
+  width: 100%; /* Fill the grid cell with the image */
+  height: 100%; /* Fill the grid cell with the image */
+  object-fit: cover; /* Ensure the image covers the cell */
+}
